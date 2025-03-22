@@ -1,9 +1,9 @@
 -- 名称
-name = "Abigail Pro Max T PlusCup"
+name = "Abigail and Woodie Pro Max"
 -- 描述
 description =  
 [[
-更强的阿比盖尔！
+更强的阿比盖尔！更强的伍迪（驼鹿形态）！
 可修改阿比盖尔攻击力、生命值、移动速度以及常规生命回复速度。
 并且灵体草药效果增强。
 
@@ -25,6 +25,10 @@ V1.3更新
 V1.4更新
 	- 移除了发光范围的加强（因为bug）
 	- 默认攻击力改为5倍（仍然可调整）
+
+V1.5更新
+	- 改名为 Abigail and Woodie Pro Max
+	- 增加伐木工伍迪变身的 驼鹿（Weremoose） 的攻击力（默认5倍）
 ]]
 -- 作者
 author = "xivna"
@@ -117,5 +121,21 @@ configuration_options =
             {description = "100倍", data = 100}
         },
         default = 1
-    }
+    },
+    {
+		name = "weremoose_damage_d",
+		hover = "伐木工伍迪变身的 驼鹿（Weremoose） 的攻击力（默认5倍）。\nHow many times the default attack power of Weremoose.",
+		label = "驼鹿（Weremoose） 的攻击力倍数",
+		options =
+		{
+			{description = "1倍", data = 1},
+			{description = "2倍", data = 2},
+			{description = "3倍", data = 3},
+			{description = "5倍(Default)", data = 5},
+			{description = "10倍", data = 10},
+			{description = "15倍", data = 15},
+			{description = "20倍", data = 20},
+		},
+		default = 5,
+	}
 }

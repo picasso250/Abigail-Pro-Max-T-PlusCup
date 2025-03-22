@@ -12,8 +12,8 @@ TUNING.ABIGAIL_DAMAGE =
     night = 40*damage_d,
 }
 
-Light_d = GetModConfigData("Light_d")
-print("GetModConfigData('Light_d'): ", Light_d)
+-- Light_d = GetModConfigData("Light_d")
+-- print("GetModConfigData('Light_d'): ", Light_d)
 -- TUNING.ABIGAIL_LIGHTING =
 -- {
 --     {l = 0.0, r = 0.0},
@@ -37,3 +37,7 @@ AddPrefabPostInit("abigail", function(inst)
     end
     inst.components.health:StartRegen(GetModConfigData("regen_d"), 1)
 end)
+
+weremoose_damage_d = GetModConfigData("weremoose_damage_d")
+print("GetModConfigData('weremoose_damage_d'): ", weremoose_damage_d)
+TUNING.WEREMOOSE_DAMAGE = 34*1.75 * weremoose_damage_d -- 伐木工 伍迪 驼鹿 形态攻击 5倍
